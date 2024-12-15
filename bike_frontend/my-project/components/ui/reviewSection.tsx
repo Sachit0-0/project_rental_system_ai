@@ -68,7 +68,7 @@ const ReviewSection: React.FC<ReviewSectionProps> = ({ bikeId, token }) => {
 
   return (
     <div className="flex flex-col gap-4">
-      <h3 className="text-2xl font-bold text-secondary">Reviews</h3>
+      <h3 className="text-2xl font-bold text-secondary">Customer Insight</h3>
 
       {error && <p className="text-red-500">{error}</p>}
 

@@ -34,9 +34,9 @@ export default function Landing() {
             <div className="flex-1 flex items-center justify-center text-center lg:text-left lg:pr-8">
               <div>
                 <h2 className="text-3xl font-bold text-white sm:text-4xl">
-                  Boost your productivity.
+                  Get Moving, Get More Done:
                   <br />
-                  Start renting bikes today.
+                  Bike Rentals Made Simple
                 </h2>
                 <p className="mt-6 text-lg text-gray-300">
                   Discover the most affordable bike rentals and start your next
