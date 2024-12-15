@@ -9,6 +9,8 @@ class BikeSerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'model', 'bike_type', 'availability', 'price_per_hour', 'image','description']
 
 class RentalSerializer(serializers.ModelSerializer):
+    bike = BikeSerializer(read_only=True)  # Use the BikeSerializer for nested representation
+
     class Meta:
         model = Rental
         fields = ['id', 'user', 'bike', 'start_time', 'end_time', 'total_price']

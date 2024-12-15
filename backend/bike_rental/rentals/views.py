@@ -173,7 +173,7 @@ class SimilarBikesView(APIView):
         # Get the embeddings for all the similar bikes
         bike_embeddings = []
         for b in similar_bikes:
-            embedding = similarity_model(b.model if b.model else b.description)[0]
+            embedding = similarity_model(b.model if b.model else b.bike_type)[0]
             bike_embeddings.append(embedding[0])
 
         # Calculate the cosine similarity between the current bike and all the similar bikes
